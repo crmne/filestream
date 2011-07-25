@@ -63,7 +63,7 @@ $(document).ready(function () {
       autoStop: 10
     }, function (data, success, xhr, handle) {
       // upload status updated
-      var json = JSON.parse(data);
+      var json = jQuery.parseJSON(data);
       $('#progressbar').progressbar({value: json.percent});
 
       if (json.file) {
