@@ -1,0 +1,36 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+iframe, .template {
+  display: none;
+}
+form {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#progressbar {
+  width: 300px;
+  display: none;
+}
+#comment {
+  display: none;
+}
+#comment textarea {
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+#comment input {
+  text-align: right;
+}
+.upload {
+  margin-bottom: 1em;
+  border: 1px black;
+}
+.upload .title {
+  font-size: 1.2em;
+}
+.upload .created_at, .upload .size, .upload .path {
+  color: #999;
+  font-size: 0.9em;
+}

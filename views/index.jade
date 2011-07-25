@@ -1,0 +1,23 @@
+h1 FileStream
+
+iframe#upload_target(name="upload_target", src="")
+iframe#comment_target(name="comment_target", src="")
+
+form#upload(method="post", action="/upload", enctype="multipart/form-data", target="upload_target")
+  input(type="file", name="file")
+  input(type="submit", name="press", value="Upload")
+
+#progressbar
+
+form#comment(method="post", action="/comment", target="comment_target")
+  textarea(name="comment")
+  input(type="submit", value="Comment")
+
+h3#uploads_title
+.upload.template
+  .title
+  .comment
+  .created_at
+  .size
+  .path
+#uploads
