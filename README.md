@@ -1,6 +1,6 @@
 Filestream is a proof-of-concept application that implements asynchronous file uploading with server-side progress tracking in [Node.js][].
 
-Unfortunately not all people use modern browsers. For this reason, tracking a file's upload progress using modern HTML and Javascript APIs, such as [HTML5's progress][html5-progress] or the [Progress Events API][progress-events], is often unfeasible. Filestream is a server-side solution that works with any browser supported by [jQuery][].
+Unfortunately not all people use modern browsers. For this reason, tracking a file's upload progress using modern HTML and Javascript APIs, such as [HTML5's progress][html5-progress] or the [Progress Events API][progress-events], is often unfeasible. Filestream is a server-side solution that works with virtually any browser supported by [jQuery][].
 
 It supports concurrent uploads, server-side upload progress, and concurrent field updates.
 Its only dependencies are the [Express][] microframework, the [connect-form][] multipart form parsing middleware, and the [jade][] template engine.
@@ -16,18 +16,18 @@ Installation and Usage
 
 2. Change directory to `filestream` and install the dependencies:
 
-    npm install
+        npm install
 
 3. Start the node server:
 
-    node app.js
+        node app.js
 
 4. Go to http://localhost:3000
 
 License
 -------
 
-Filestream is released under the MIT License.
+Filestream is released under the MIT License. See the accompanying LICENSE file for further details.
 
 
 [Node.js]: http://nodejs.org/
