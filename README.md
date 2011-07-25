@@ -1,6 +1,6 @@
 Filestream is a proof-of-concept application that implements asynchronous file uploading with server-side progress tracking in [Node.js][].
 
-Unfortunately not all people use modern browsers. For this reason, tracking a file's upload progress using modern HTML and Javascript APIs, such as [HTML5's progress][html5-progress] or the [Progress Events API][progress-events], is often unfeasible. Filestream is a server-side solution that works with virtually any browser supported by [jQuery][].
+Unfortunately not all people use modern browsers. For this reason, tracking a file's upload progress using modern HTML and Javascript APIs, such as [HTML5's progress][html5-progress] or the [Progress Events API][progress-events], is often unfeasible. Filestream is a server-side solution that works with virtually any browser supported by [jQuery][], doesn't use Flash, and doesn't require special [web][apache] [server][lighthttpd] [modules][nginx].
 
 It supports concurrent uploads, server-side upload progress, and concurrent field updates.
 Its only dependencies are the [Express][] microframework, the [connect-form][] multipart form parsing middleware, and the [jade][] template engine.
@@ -38,3 +38,6 @@ Filestream is released under the MIT License. See the accompanying LICENSE file 
 [html5-progress]: http://dev.w3.org/html5/spec/Overview.html#the-progress-element
 [progress-events]: http://dev.w3.org/2006/webapi/progress/
 [jQuery]: http://jquery.com/
+[nginx]: http://wiki.nginx.org/HttpUploadProgressModule
+[lighthttpd]: http://redmine.lighttpd.net/wiki/1/Docs:ModUploadProgress
+[apache]: https://github.com/drogus/apache-upload-progress-module
